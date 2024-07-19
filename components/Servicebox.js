@@ -1,9 +1,21 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Servicebox({service_name, desc, icon, color}) {
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 500,
+      easing: 'ease',
+      once: true
+    })
+  }, [])
+
   return (
-      <div className="service-box bg-white max-w-sm w-fit flex flex-col items-center gap-4 shadow-md p-5 rounded-md">
+      <div data-aos="fade-up" className="service-box bg-white max-w-sm w-fit flex flex-col items-center gap-4 shadow-md p-5 rounded-md">
           <div className={`icon-wrapper p-6 rounded-lg bg-${color}-500`}>
               <FontAwesomeIcon icon={icon}
               className={`text-white text-lg 
