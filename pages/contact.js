@@ -5,17 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Contact() {
 
-  const [opacity, setOpacity] = useState(0);
+  const [pageVisible, setPageVisible] = useState(false);
   useEffect(()=>{
-    setTimeout(() => {
-      setOpacity(100)
-    }, 10);
+    setPageVisible(true)
   }, [])
   
   return (
     <>
     <Navbar />
-    <main id='main' className={`transition-all duration-300 opacity-${opacity}`}>
+    <main id='main' className={`transition-all duration-500 ${pageVisible ? 'opacity-100' : 'opacity-0'}`}>
       <section className='px-10 py-10'>
         <div className='flex justify-between gap-5'>
           <div className='flex flex-col gap-4'>
