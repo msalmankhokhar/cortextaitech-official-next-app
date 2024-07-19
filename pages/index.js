@@ -1,14 +1,22 @@
-import Image from "next/image";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Servicebox from "@/components/Servicebox";
 import Particles from "react-tsparticles";
 import { faBullhorn, faLaptopCode, faCode, faRobot, faPalette, faChartLine } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
+
+  const [opacity, setOpacity] = useState(0);
+  useEffect(()=>{
+    setTimeout(() => {
+      setOpacity(100)
+    }, 10);
+  }, [])
+
   return (
     <>
       <Navbar />
-      <main>
+      <main id='main' className={`transition-all duration-300 opacity-${opacity}`}>
         <section id="header-content" className=" relative flex flex-col gap-7 items-center justify-center px-10">
           <div id="header-content-wrapper" className="flex flex-col gap-7 items-center justify-center">
             <h1 className="text-5xl font-bold text-white">Plugging Great Ideas into Your Brand</h1>

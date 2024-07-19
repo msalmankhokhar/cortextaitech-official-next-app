@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="bg-slate-100">
+      <body className="bg-slate-50">
         <Main/>
         <NextScript />
         <script defer src="https://kit.fontawesome.com/7d3f73a100.js" crossOrigin="anonymous"></script>

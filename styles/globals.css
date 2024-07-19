@@ -17,6 +17,12 @@
   height: 1.8rem;
 }
 
+/* Navbar Links */
+.nav-link-current{
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid rgb(245 158 11);
+}
+
 /* Header */
 #header{
   min-height: 500px;
