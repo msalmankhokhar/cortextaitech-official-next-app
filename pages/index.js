@@ -13,8 +13,8 @@ export default function Home() {
           <div id="header-content-wrapper" className="flex flex-col gap-7 items-center justify-center">
             <h1 className="text-5xl font-bold text-white">Plugging Great Ideas into Your Brand</h1>
             <p className="text-lg text-wrap text-center max-w-screen-lg text-white">
-              Welcome To Cortex AI Tech, Where We Leverage Cutting-Edge
-              Artificial Intelligence To Empower Businesses And Individuals Alike and we build meaning but digital experiences to help grow businesses
+              Welcome To Cortex AI Technologies, Where We Leverage Cutting-Edge
+              Artificial Intelligence To Empower Businesses And Individuals Alike and we build meaningful digital experiences to help grow businesses
             </p>
             <div className="flex gap-3 items-center">
               <a href="#" className="bg-amber-500 border-2 border-amber-500 text-white py-3 px-5 font-bold rounded-full text-sm leading-none">Get Started</a>
@@ -28,7 +28,7 @@ export default function Home() {
             <div className="flex flex-col w-fit">
               <div className="flex gap-3 items-center">
                 <div className="heading-line bg-amber-500"></div>
-                <span className="text-lg text-amber-500 font-bold self-start">Services</span>
+                <span className="text-lg text-slate-800 font-bold self-start">Services</span>
               </div>
               <span className="text-3xl font-bold">What We Offer</span>
             </div>
