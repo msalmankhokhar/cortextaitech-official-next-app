@@ -3,22 +3,37 @@
 @tailwind utilities;
 
 :root{
-  yellow-light: #F3B600;
-  yellow-dark: #FFA800;
+  --yellow-light: #F3B600;
+  --yellow-dark: #FFA800;
+  --yellow-extra-dark: #df9602;
 }
 
-#header{
-  min-height: 500px;
-}
-
+/* Logo */
 .logo-icon{
-  height: 2.5rem;
+  height: 3.4rem;
 }
 
 .logo-img{
   height: 1.8rem;
 }
 
+/* Header */
+#header{
+  min-height: 500px;
+}
+
 #header-content{
-  min-height: 400px;
+  min-height: 450px;
+  background: linear-gradient(90deg, rgb(22, 0, 71), black);
+}
+
+/* Buttons */
+.btn-primary{
+  background: linear-gradient(90deg, var(--yellow-extra-dark), var(--yellow-dark));
+}
+
+/* Headings */
+.heading-line{
+  width: 30px;
+  height: 2px;
 }
