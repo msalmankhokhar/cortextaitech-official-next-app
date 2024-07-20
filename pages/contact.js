@@ -49,7 +49,7 @@ export default function Contact() {
                 <input type="text" className='bg-white border border-gray-300 flex-grow py-3 px-5 rounded-full text-xs outline-none focus:ring-2 ring-yellow-400' name='lastname' placeholder='Last Name' />
               </div>
               <input type="text" className='bg-white border border-gray-300 py-3 px-5 rounded-full text-xs outline-none focus:ring-2 ring-yellow-400' name='email' placeholder='Email' />
-              <input type="text" className='bg-white border border-gray-300 py-3 px-5 rounded-full text-xs outline-none focus:ring-2 ring-yellow-400' name='msg' placeholder='Your Message' />
+              <textarea rows={10} className='bg-white border border-gray-300 py-3 px-5 rounded-2xl text-xs outline-none focus:ring-2 ring-yellow-400' name='msg' placeholder='Your Message' />
             </div>
             <button type='button' className="bg-amber-500 text-white font-bold py-3 px-5 rounded-full text-xs leading-none self-center">Submit</button>
           </form>

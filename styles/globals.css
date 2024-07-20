@@ -23,14 +23,26 @@
   border-bottom: 2px solid rgb(245 158 11);
 }
 
-/* Header */
-#header{
-  min-height: 500px;
-}
-
 #header-content{
   min-height: 450px;
-  background: linear-gradient(90deg, rgb(22, 0, 71), black);
+  /* background: linear-gradient(90deg, rgb(22, 0, 71), black); */ /* Dont remove this line. This was the first header gradient used */
+  background: linear-gradient(90deg, #003047, black);
+ /*  Some gradient color variations. You can use them above
+      #2b0047 purple 
+      #003047 slate
+    */
+}
+
+/* Procedure Section */
+#procedure-section{
+  /* background: linear-gradient(90deg, #2b0047, black); */
+}
+
+.number-badge{
+  width: 60px;
+  height: 60px;
+  top: -15px;
+  left: -10px;
 }
 
 /* Buttons */

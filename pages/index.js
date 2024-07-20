@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Servicebox from "@/components/Servicebox";
 import Particles from "react-tsparticles";
-import { faBullhorn, faLaptopCode, faCode, faRobot, faPalette, faChartLine, faL } from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn, faLaptopCode, faCode, faRobot, faPalette, faChartLine } from "@fortawesome/free-solid-svg-icons";
+import ProcedureBox from "@/components/ProcedureBox";
 
 export default function Home() {
 
   const [pageVisible, setPageVisible] = useState(false);
-  useEffect(()=>{
+  useEffect(() => {
     setPageVisible(true)
   }, [])
 
@@ -19,7 +20,7 @@ export default function Home() {
         <section id="header-content" className=" relative flex flex-col gap-7 items-center justify-center px-10">
           <div id="header-content-wrapper" className="flex flex-col gap-7 items-center justify-center">
             <h1 className="text-5xl font-bold text-white">Plugging Great Ideas into Your Brand</h1>
-            <p className="text-lg text-wrap text-center max-w-screen-lg text-white">
+            <p className="text-lg text-wrap text-center max-w-screen-lg text-gray-100">
               Welcome To Cortex AI Technologies, Where We Leverage Cutting-Edge
               Artificial Intelligence To Empower Businesses And Individuals Alike and we build meaningful digital experiences to help grow businesses
             </p>
@@ -42,45 +43,87 @@ export default function Home() {
           </h1>
           <div id="services-container" className="grid grid-flow-row grid-cols-3 items-center justify-center gap-4">
             <Servicebox
-            service_name="Web Development" 
-            desc="Our Business plan is a written document describing our work activities"
-            icon={faCode}
-            color="yellow"
+              service_name="Web Development"
+              desc="Our Business plan is a written document describing our work activities"
+              icon={faCode}
+              color="yellow"
             />
             <Servicebox
-            service_name="AI Model Development" 
-            desc="Our Business plan is a written document describing our work activities"
-            icon={faRobot}
-            color="orange"
+              service_name="AI Model Development"
+              desc="Our Business plan is a written document describing our work activities"
+              icon={faRobot}
+              color="orange"
             />
             <Servicebox
-            service_name="Graphic Designing" 
-            desc="Our Business plan is a written document describing our work activities"
-            icon={faPalette}
-            color="red"
+              service_name="Graphic Designing"
+              desc="Our Business plan is a written document describing our work activities"
+              icon={faPalette}
+              color="red"
             />
             <Servicebox
-            service_name="Data Analysis" 
-            desc="Our Business plan is a written document describing our work activities"
-            icon={faChartLine}
-            color="teal"
+              service_name="Data Analysis"
+              desc="Our Business plan is a written document describing our work activities"
+              icon={faChartLine}
+              color="teal"
             />
             <Servicebox
-            service_name="Software Testing" 
-            desc="Our Business plan is a written document describing our work activities"
-            icon={faLaptopCode}
-            color="sky"
+              service_name="Software Testing"
+              desc="Our Business plan is a written document describing our work activities"
+              icon={faLaptopCode}
+              color="sky"
             />
             <Servicebox
-            service_name="Digital Marketing" 
-            desc="Our Business plan is a written document describing our work activities"
-            icon={faBullhorn}
-            color="green"
+              service_name="Digital Marketing"
+              desc="Our Business plan is a written document describing our work activities"
+              icon={faBullhorn}
+              color="green"
             />
           </div>
           <a href="#" className="bg-amber-500 border-2 border-amber-500 text-white py-3 px-5 font-bold rounded-full self-center text-sm leading-none">View All Services</a>
         </section>
-        
+
+        <section id="procedure-section" className="flex flex-col gap-8 my-20 py-16 px-10 bg-slate-100">
+          <h1 className="text-center flex justify-center mb-10">
+            <div className="flex flex-col w-fit">
+              <div className="flex gap-3 items-center">
+                <div className="heading-line bg-amber-500"></div>
+                <span className="text-lg font-bold self-start">Procedure</span>
+              </div>
+              <span className="text-3xl font-bold">Let{`'`}s see How We Work!</span>
+            </div>
+          </h1>
+
+          <div className="flex gap-5">
+            <ProcedureBox
+              title={"Book an Appointment"}
+              number={1}
+              content={"Reach us by using our social media channels or contact details. Book an Appointment for your concern. Our team will get back to you as soon as possible "}
+            />
+
+            <ProcedureBox
+              title={"Meet our Team"}
+              number={2}
+              content={"Reach us by using our social media channels or contact details. Book an Appointment for your concern. Our team will get back to you as soon as possible "}
+            />
+
+            <ProcedureBox
+              title={"Get Consultation"}
+              number={3}
+              content={"Reach us by using our social media channels or contact details. Book an Appointment for your concern. Our team will get back to you as soon as possible "}
+            />
+
+            <ProcedureBox
+              title={"Start Project"}
+              number={4}
+              content={"Reach us by using our social media channels or contact details. Book an Appointment for your concern. Our team will get back to you as soon as possible "}
+            />
+          </div>
+          <div className="flex gap-3 items-center self-center">
+            <a href="#" className="bg-amber-500 border-2 border-amber-500 text-white py-3 px-5 font-bold rounded-full text-sm leading-none">Get Free Consultation</a>
+            <a href="#" className="btn-secondary border-2 border-slate-400 font-bold py-3 px-5 rounded-full text-sm leading-none text-slate-800">Contact Us</a>
+          </div>
+        </section>
+
       </main>
     </>
   );
