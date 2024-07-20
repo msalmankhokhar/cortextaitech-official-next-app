@@ -15,6 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <main id='main' className={`transition-all duration-500 ${pageVisible ? 'opacity-100' : 'opacity-0'}`}>
+
         <section id="header-content" className=" relative flex flex-col gap-7 items-center justify-center px-10">
           <div id="header-content-wrapper" className="flex flex-col gap-7 items-center justify-center">
             <h1 className="text-5xl font-bold text-white">Plugging Great Ideas into Your Brand</h1>
@@ -79,6 +80,7 @@ export default function Home() {
           </div>
           <a href="#" className="bg-amber-500 border-2 border-amber-500 text-white py-3 px-5 font-bold rounded-full self-center text-sm leading-none">View All Services</a>
         </section>
+        
       </main>
     </>
   );
