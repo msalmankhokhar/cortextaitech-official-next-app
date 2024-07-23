@@ -1,14 +1,14 @@
 import "@/styles/globals.css";
-import { Open_Sans } from "next/font/google";
+import { Roboto as Font } from "next/font/google";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const font = Font({ subsets: ["latin"], weight : ['400', '500', '700', '900'] });
 
 export default function App({ Component, pageProps }) {
   return (
     <>
       <style jsx global>{`
         html {
-          font-family: ${openSans.style.fontFamily};
+          font-family: ${font.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />

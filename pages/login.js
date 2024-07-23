@@ -4,6 +4,8 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Logo from '@/components/Logo'
 import Image from 'next/image';
 import Link from 'next/link';
+import FooterDark from '@/components/FooterDark';
+import Footer from '@/components/Footer';
 
 export default function Login() {
 
@@ -18,7 +20,7 @@ export default function Login() {
 
     <main id='main' className={`transition-all duration-500 ${pageVisible ? 'opacity-100' : 'opacity-0'}`}>
 
-      <section className='px-10 py-10'>
+      <section className='sm:px-10 px-5 py-10'>
         <div className="flex justify-center">
             <div className='flex flex-col gap-5 max-w-screen-xs w-full'>
                 <form className='flex flex-col gap-5 rounded-sm'>
@@ -53,6 +55,7 @@ export default function Login() {
         </div>
       </section>
 
+      <Footer /> 
     </main>
     </>
   )

@@ -7,7 +7,6 @@ export default function Document() {
       <body className="bg-slate-50">
         <Main/>
         <NextScript />
-        <script defer src="https://kit.fontawesome.com/7d3f73a100.js" crossOrigin="anonymous"></script>
       </body>
     </Html>
   );

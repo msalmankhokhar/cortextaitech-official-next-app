@@ -15,7 +15,7 @@ export default function Servicebox({service_name, desc, icon, color}) {
   }, [])
 
   return (
-      <div data-aos="fade-up" className="service-box bg-white max-w-sm w-fit flex flex-col items-center gap-4 shadow-md p-5 rounded-md">
+      <div data-aos="fade-up" className="service-box bg-white w-full md:max-w-sm flex flex-col items-center gap-4 shadow-md p-5 rounded-md">
           <div className={`icon-wrapper p-6 rounded-lg bg-${color}-500`}>
               <FontAwesomeIcon icon={icon}
               className={`text-white text-lg 
@@ -29,7 +29,7 @@ export default function Servicebox({service_name, desc, icon, color}) {
               }`}/> 
           </div>
           <h2 className="font-bold text-lg">{service_name}</h2>
-          <p className="text-center text-xs text-gray-500">{desc}</p>
+          <p className="text-center max-w-sm md:w-full text-xs text-gray-500">{desc}</p>
       </div>
   )
 }

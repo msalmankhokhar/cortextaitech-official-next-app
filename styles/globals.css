@@ -17,6 +17,11 @@
   height: 1.8rem;
 }
 
+/* Mobile Menu */
+#mobile-menu.menu-open{
+  left: -270px;
+}
+
 /* Navbar Links */
 .nav-link-current{
   padding-bottom: 0.25rem;
@@ -27,7 +32,7 @@
   min-height: 450px;
 }
 
-#header-content, #footer{
+#header-content{
   /* background: linear-gradient(90deg, rgb(22, 0, 71), black); */ /* Dont remove this line. This was the first header gradient used */
   /* background: linear-gradient(90deg, #003047, black); */
   background: radial-gradient( #003047, black);
