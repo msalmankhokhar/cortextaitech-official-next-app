@@ -61,10 +61,19 @@
 } */
 
 .number-badge{
-  width: 60px;
-  height: 60px;
   top: -15px;
   left: -10px;
+  padding: 10px;
+  /* background-color: #003047; */
+  /* background: linear-gradient(135deg,#003047, #041a25, #003047); */
+  /* background: linear-gradient(135deg, #184358, #031c2a, #010b11); */
+  background: linear-gradient(135deg, #030f15, #031c2a, #010b11);
+  box-shadow: -10px -10px 30px #030f15;
+}
+
+.number-badge > .wrapper{
+  width: 60px;
+  height: 60px;
 }
 
 /* Buttons */
