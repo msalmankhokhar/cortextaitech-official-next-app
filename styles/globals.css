@@ -5,7 +5,19 @@
 :root{
   --yellow-light: #F3B600;
   --yellow-dark: #FFA800;
-  --yellow-extra-dark: #df9602;
+  --yellow-extra-dark: #ff8800;
+}
+
+.brand-gradient{
+  background: linear-gradient(90deg, var(--yellow-extra-dark), var(--yellow-light));
+}
+
+.team-member-image{
+  filter: grayscale(1);
+}
+
+.service-box:hover .service-box-arrow{
+  opacity: 1;
 }
 
 /* Logo */
@@ -32,7 +44,7 @@
   min-height: 450px;
 }
 
-#header-content{
+#header-content, #procedure-section{
   /* background: linear-gradient(90deg, rgb(22, 0, 71), black); */ /* Dont remove this line. This was the first header gradient used */
   /* background: linear-gradient(90deg, #003047, black); */
   background: radial-gradient( #003047, black);
@@ -43,10 +55,10 @@
 }
 
 /* Procedure Section */
-#procedure-section{
+/* #procedure-section{
   background: linear-gradient(90deg, #2b0047, black);
   background: radial-gradient(#2b0047, black);
-}
+} */
 
 .number-badge{
   width: 60px;

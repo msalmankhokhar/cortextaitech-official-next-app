@@ -23,7 +23,10 @@ export default function Home() {
 
         <section id="header-content" className=" relative flex flex-col gap-7 items-center justify-center px-5 sm:px-10 py-10">
           <div id="header-content-wrapper" className="flex flex-col gap-7 items-center justify-center">
-            <h1 className="text-2xl text-center sm:text-5xl font-bold text-white">Plugging Great Ideas into Your Brand</h1>
+            <div className="flex flex-col gap-1 items-center justify-center">
+              <Image className="mb-3" width={270} height={'10'} src={`/logos/Web/text-only-logo-full-white-without-tagline.png`} alt="Cortex AI Tech Logo" />
+              <h1 className="text-lg text-center sm:text-2xl leading-none font-semibold text-white">Plugging Great Ideas into Your Brand</h1>
+            </div>
             <p className="text-sm sm:text-lg text-wrap text-center max-w-screen-lg text-gray-100">
               Welcome To Cortex AI Technologies, Where We Leverage Cutting-Edge
               Artificial Intelligence To Empower Businesses And Individuals Alike and we build meaningful digital experiences to help grow businesses
@@ -40,11 +43,11 @@ export default function Home() {
             <div className="flex flex-col w-fit">
               <div className="flex gap-3 items-center">
                 <div className="heading-line bg-amber-500"></div>
-                <span className="text-lg text-slate-800 font-bold self-start">Services</span>
+                <span className="text-lg text-white font-bold self-start">Services</span>
               </div>
-              <span className="text-3xl font-bold">What We Offer</span>
+              <span className="text-3xl font-bold text-white">What We Offer</span>
             </div>
-            <p className="text-sm text-slate-700 mt-3 text-center max-w-screen-md">Working in a diverse variety of domains from Machine Learning and AI to Software Development and Marketing</p>
+            <p className="text-sm mt-3 text-center max-w-screen-md text-white">Working in a diverse variety of domains from Machine Learning and AI to Software Development and Marketing</p>
           </h1>
           <div id="services-container" className="flex flex-col items-center justify-center flex-wrap xs:flex-row lg:grid lf:grid-flow-row grid-cols-3 gap-4 xl:flex-row">
             <Servicebox
@@ -124,7 +127,7 @@ export default function Home() {
             />
           </div>
           <div className="flex gap-3 items-center self-center">
-            <a href="#" className="bg-amber-500 border-2 border-amber-500 text-white py-3 px-5 font-bold rounded-full text-xs sm:text-sm leading-none">Get Free Consultation</a>
+            <a href="#" className="bg-amber-400 border-2 border-amber-400 py-3 px-5 font-bold rounded-full text-xs sm:text-sm leading-none">Get Free Consultation</a>
             <a href="#" className="btn-secondary border-2 border-slate-400 font-bold py-3 px-5 rounded-full text-xs sm:text-sm leading-none text-white">Contact Us</a>
           </div>
         </section>
@@ -134,9 +137,9 @@ export default function Home() {
             <div className="flex flex-col w-fit">
               <div className="flex gap-3 items-center">
                 <div className="heading-line bg-amber-500"></div>
-                <span className="text-lg font-bold self-start text-slate-700">Creative Team</span>
+                <span className="text-lg font-bold self-start text-white">Creative Team</span>
               </div>
-              <span className="text-3xl font-bold text-slate-800">Our Team & Leadership</span>
+              <span className="text-3xl font-bold text-white">Our Team & Leadership</span>
             </div>
             {/* <p className="text-sm text-slate-500 mt-3 text-left max-w-screen-md"></p> */}
           </h1>
@@ -166,24 +169,24 @@ export default function Home() {
               picture={true}
             />
           </div>
-          <a href="#" className="bg-amber-500 border-2 border-amber-500 text-white py-3 px-5 font-bold rounded-full text-sm leading-none self-center">View all Members</a>
+          <a href="#" className="bg-amber-400 border-2 border-amber-500 text-black py-3 px-5 font-bold rounded-full text-sm leading-none self-center">View all Members</a>
 
         </section>
 
         <section id="contact-section" className="flex flex-col gap-8 sm:my-10 py-7 sm:py-16 px-5 sm:px-10">
-          <h1 className="text-center flex flex-col justify-center self-center lg:self-start sm:mb-10">
+          <h1 className="text-center flex flex-col justify-center self-center sm:mb-10">
             <div className="flex flex-col w-fit">
               <div className="flex gap-3 items-center">
                 <div className="heading-line bg-amber-500"></div>
-                <span className="text-lg font-bold self-start text-slate-700">Get Quote</span>
+                <span className="text-lg font-bold self-start text-white">Get Quote</span>
               </div>
-              <span className="text-3xl font-bold text-slate-800">Drop Your Concern</span>
+              <span className="text-3xl font-bold text-white">Drop Your Concern</span>
             </div>
             {/* <p className="text-sm text-slate-500 mt-3 text-left max-w-screen-md">Drop a message for us. We will get back to you as soon as possible</p> */}
           </h1>
           <div className="flex flex-col items-center justify-center md:flex-row">
             <ContactForm />
-            <Image id="contact-img" src={"/img/contact.gif"} width={400} height={400} className="aspect-square mix-blend-multiply" alt="contact us gif"/>
+            {/* <Image id="contact-img" src={"/img/contact.gif"} width={400} height={400} className="aspect-square mix-blend-multiply" alt="contact us gif"/> */}
           </div>
         </section>
 

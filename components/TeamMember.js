@@ -14,17 +14,19 @@ export default function TeamMember({ name, designation, picture = true, picForma
         }
     }, []);
     return (
-        <div className="flex flex-col rounded-md overflow-hidden bg-white shadow-sm border border-gray-200">
+        <div className="flex flex-col rounded-lg overflow-hidden shadow-sm border-2 bg-stone-900 border-gray-700">
             <div className='p-10'>
-                <Image className='rounded-full aspect-square ring-2 ring-slate-200 bg-blend-multiply' src={picture ? `/img/team/p/${name.replace(" ", "_")}.${picFormat}` : '/img/team-default.jpg'} width={isMobile ? 200 : 160} height={isMobile ? 200 : 160} alt={name} />
+                <div className='bg-amber-500 rounded-full ring-2 ring-slate-900'>
+                <Image className='team-member-image rounded-full aspect-square' src={picture ? `/img/team/p/${name.replace(" ", "_")}.${picFormat}` : '/img/team-default.jpg'} width={isMobile ? 200 : 160} height={isMobile ? 200 : 160} alt={name} />
+                </div>
             </div>
             <div className="flex flex-col gap-1 px-3 py-4">
-                <h2 className="font-bold text-sm">{name}</h2>
+                <h2 className="font-bold text-sm text-white">{name}</h2>
                 <div className="flex justify-between items-center gap-1">
-                    <p className="text-xs">{designation}</p>
+                    <p className="text-xs text-gray-300">{designation}</p>
                     <div className="flex items-center gap-1">
-                        <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50">
-                            <FontAwesomeIcon icon={faLinkedinIn} className="text-xs text-sky-500" />
+                        <div className="flex items-center justify-center w-8 h-8 rounded-full">
+                            <FontAwesomeIcon icon={faLinkedinIn} className="text-sm text-sky-500" />
                         </div>
                     </div>
                 </div>
