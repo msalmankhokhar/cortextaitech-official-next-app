@@ -42,9 +42,19 @@
 
 #header-content{
   min-height: 450px;
+  /* background-color: rgba(0, 0, 0, 0.553); */
+  overflow: hidden;
 }
 
-#header-content, #procedure-section{
+/* Header Video */
+#homepage-header-video{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+}
+
+#procedure-section, #header, #contact-section{
   /* background: linear-gradient(90deg, rgb(22, 0, 71), black); */ /* Dont remove this line. This was the first header gradient used */
   /* background: linear-gradient(90deg, #003047, black); */
   background: radial-gradient( #003047, black);
@@ -83,11 +93,6 @@
 
 /* Headings */
 .heading-line{
-  width: 40px;
+  width: 30px;
   height: 6px;
 }
-
-/* Contact */
-/* #contact-img{
-  mix-blend-mode: multiply;
-} */

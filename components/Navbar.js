@@ -13,7 +13,7 @@ export default function Navbar() {
   const mobileMenuHandler = ()=>{ setMobileMenuOpen(!mobileMenuOpen) }
 
   return (
-      <nav className="flex items-center gap-5 py-3 px-5 sm:px-10 justify-between bg-gray-950">
+      <nav className="flex items-center gap-5 py-3 px-5 sm:px-10 justify-between">
           <Logo textColor='white'/>
           <div className="flex items-center justify-center gap-5">
             <ul className="hidden items-center justify-center gap-5 sm:flex">

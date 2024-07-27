@@ -14,16 +14,16 @@ export default function TeamMember({ name, designation, picture = true, picForma
         }
     }, []);
     return (
-        <div className="flex flex-col rounded-lg overflow-hidden shadow-sm border-2 bg-stone-900 border-gray-700">
+        <div className="flex flex-col rounded-lg overflow-hidden shadow-sm bg-slate-900">
             <div className='p-10'>
                 <div className='bg-amber-500 rounded-full ring-2 ring-slate-900'>
                 <Image className='team-member-image rounded-full aspect-square' src={picture ? `/img/team/p/${name.replace(" ", "_")}.${picFormat}` : '/img/team-default.jpg'} width={isMobile ? 200 : 160} height={isMobile ? 200 : 160} alt={name} />
                 </div>
             </div>
-            <div className="flex flex-col gap-1 px-3 py-4">
-                <h2 className="font-bold text-sm text-white">{name}</h2>
+            <div className="flex flex-col gap-1 px-3 py-4 bg-slate-100">
+                <h2 className="font-bold text-sm">{name}</h2>
                 <div className="flex justify-between items-center gap-1">
-                    <p className="text-xs text-gray-300">{designation}</p>
+                    <p className="text-xs text-gray-600">{designation}</p>
                     <div className="flex items-center gap-1">
                         <div className="flex items-center justify-center w-8 h-8 rounded-full">
                             <FontAwesomeIcon icon={faLinkedinIn} className="text-sm text-sky-500" />
