@@ -21,7 +21,7 @@ export default function Navbar() {
                 <li><Link href="/contact" className={`${pathname=='/contact'?'nav-link-current' : ''} text-sm font-semibold text-white leading-none`}>Contact Us</Link></li>
                 {/* <li><Link href="/login" className={`${pathname=='/login'?'nav-link-current' : ''} text-white text-sm font-semibold leading-none`}>Login</Link></li> */}
             </ul>
-            <ul id='mobile-menu' style={{maxWidth: '270px', minWidth: '100px'}} className={`flex flex-col items-center justify-center gap-10 sm:hidden bg-gray-900 fixed top-0 left-0 h-screen z-10 w-full transition-all duration-300 ${mobileMenuOpen==false ? 'menu-open' : null}`}>
+            <ul id='mobile-menu' style={{maxWidth: '270px', minWidth: '100px'}} className={`flex flex-col items-center py-10 gap-10 sm:hidden bg-gray-900 fixed top-0 left-0 h-screen z-30 w-full transition-all duration-300 ${mobileMenuOpen==false ? 'menu-open' : null}`}>
                 <li><Link href="/" className={`${pathname=='/'?'nav-link-current' : null} text-sm font-semibold text-white leading-none`}>Home</Link></li>
                 <li><Link href="/contact" className={`${pathname=='/contact'?'nav-link-current' : ''} text-sm font-semibold text-white leading-none`}>Contact Us</Link></li>
                 {/* <li><Link href="/login" className={`${pathname=='/login'?'nav-link-current' : ''} text-white text-sm font-semibold leading-none`}>Login</Link></li>
